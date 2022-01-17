@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Enter your first name:"
+read I
+echo "Enter your last name:"
+read N
+echo "Enter your index number:"
+read in
+echo "First name: $I" > "Data_"$I"_"$N.txt
+echo "Last name: $N" >> "Data_"$I"_"$N.txt
+echo "Numer indeksu: $in" >> "Data_"$I"_"$N.txt
+echo "Computer architecture and OS, report of first laboratory" >> "Data_"$I"_"$N.txt
+echo "Generated at: `date`" >> "Data_"$I"_"$N.txt
