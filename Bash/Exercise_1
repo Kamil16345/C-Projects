@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Aim of this program was to use basic Input/Output operations.
 echo "Enter your first name:"
 read I
 echo "Enter your last name:"
