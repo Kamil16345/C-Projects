@@ -1,0 +1,50 @@
+#!/bin/bash
+
+#Aim of the exercise is to Insert word longer than 3 characters.
+#Next, app will display a "pyramid" of characters A,B,C with amount of columns 
+#and rows equal to length of inserted text by user. 
+
+echo "Insert text:"
+read x
+
+if ((${#x}<=4))
+then
+echo "Text is too short. Insert longer: "
+read x
+fi
+
+echo "Inserted text is: $x"
+echo ""
+
+#while(($x ))
+#do
+
+#done
+A=1
+B=1
+C=0
+D=1
+while (($A<=${#x}))
+do
+	until (( B == C))
+	do
+		if (( D==1))
+		then
+		echo -n "A"
+		elif (( D==2 ))
+		then
+		echo -n "B"
+		elif (( D==3 ))
+		then
+		echo -n "C"
+		D=0
+		fi
+		((C++))
+		((D++))
+	done
+	echo ""
+	((A++))
+	((B++))
+	((C=0))
+	((D=1))
+done
